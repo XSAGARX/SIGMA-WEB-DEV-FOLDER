@@ -1,0 +1,11 @@
+<style>
+div p:first-child {
+  color: red;
+  background-color: yellow;
+}
+
+div p:not(:first-child) {
+  background-color: blue;
+  color: white;
+}
+</style>

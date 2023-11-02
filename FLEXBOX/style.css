@@ -1,0 +1,44 @@
+.fcontainer{
+display:flex; /* now this becomes a flexbox  we use felxbox bcoz we are not happy with our default alignments
+ we want something change in it.*/
+ border: 2px solid grey;
+ height: 45vh;
+ display: flex;
+/*  flex-direction : column-reverse ; */
+/* justify-content : left; , right , centr you can use all these */
+align-items : center;
+align-items : flex-end;
+ align-items : flex-end; 
+ align-items : flex-start;
+ flex-wrap: wrap;
+
+
+}
+
+.fitem{
+    background-color: red;
+    border: 2px solid black;
+    margin : 12px;
+    width: 122px;
+    height: 122px;
+
+}
+
+.item1{
+    order: 5;
+    flex-grow: 3; /* bY default flex grow is always 1 in all the items. */
+}
+.item2{
+order : 4;
+flex-grow: 4;
+}
+.item3{
+    order: 3;
+    flex-shrink: 3; /* flex shrink se hota hai shrink jo ki shrink krne mei help karta hai. */
+}
+.item4{
+    order:2;
+}
+.item5{
+    order:1;
+}

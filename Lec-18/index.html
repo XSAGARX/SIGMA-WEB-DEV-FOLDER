@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Css box model </title>
+        <style>
+            *{
+                  margin:0;
+                  padding:0;
+                  
+            }
+            .box{ /*this box is for all the boxes suppose we have here 10 box then this will apply to all boxes. */
+                
+                background-color: aqua;
+            }
+            .box1{ /* for specific boxes only */
+                color:yellow;
+                padding:10px; /*padding is from the inside */
+                margin:25px; /*margin is from the outside */
+                border: 2px solid blue ;
+                height: 200px;
+                box-sizing: border-box;
+            }
+            /* margin collapse concept ka mtlb hota hai ki  if two margin are overlapping to eachother. then at the end maximum margin will take place. */
+            .box2{
+                   color: red;
+                   padding: 10px;
+                   margin: 25px;
+                   border: 2px solid black;
+                   height: 200px;
+                   box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <!--Css box model in css everything is box -->
+    <body>
+          <div class="box box1"> I am a box </div>
+          <div class="box box2"> I am another box </div>
+    </body>
+</html>

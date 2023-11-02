@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title> CSS sizinf units </title>
+        <style>
+            html{
+                font-size: 12px; /*sabka size 12px ho jaayega */
+            }
+
+            *{
+                margin : 0;
+                padding : 0;
+            }
+            .box{
+                border: 2px solid black;
+                width : 2048px; /* various types of units are there  px is 1/96 of inch */
+                background: aquamarine;
+                height: 5vh
+                margin : auto;
+            }
+
+            .container{
+                box-sizing: border-box;
+                border; 2px solid black;
+                /* width : 2048px; */
+                width : 80vw;
+                height: 80vh;
+                font-size: 18px;
+                margin : 23px auto;
+                background-color : aquamarine;
+            }
+            .{
+                container p{
+                    font-size : 1em;
+                }
+            }
+            .mycont{
+                border: 2px solid black;
+                box-sizing: border-box;
+                background-color: red;
+                color: rgb(18, 18, 2);
+                font-size : 22px;
+                width : 100vmin;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            This is a box 
+        </div>
+
+        <div class="container">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Illum in sit omnis enim excepturi necessitatibus repellendus 
+             veritatis earum! Quia maiores, quisquam, laudantium quasi vitae
+              deleniti aliquid dolor reprehenderit, adipisci officia officiis
+               quos quae? Reprehenderit veniam iusto ad nesciunt. Necessitatibus
+                repudiandae blanditiis sapiente quasi aut dignissimos ut itaque
+                 porro architecto,
+             distinctio consequuntur fuga quod! Maxime, pariatur? Animi.
+        </div>
+    </body>
+</html>
+
+/*
+vmin is the minimum between the viewport's height or width in percentage depending on which is smaller.
+ vmax is the maximum between the viewport's height or width in percentage depending on which is bigger */
